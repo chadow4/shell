@@ -1,8 +1,7 @@
 <?php
 
-$phpinfo = phpinfo();
-$base64_php_info = base64_encode($php_info);
+// echo phpinfo();
 
-echo "<?php echo \"$base64_php_info\"; ?>";
-
+$myvar=file_get_contents("index.php");
+echo $myvar;
 ?>
